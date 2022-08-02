@@ -1,0 +1,16 @@
+{
+  "languageserver": {
+    "golang": {
+      "command": "$GOPATH/bin/gopls",
+      "rootPatterns": ["go.mod", ".vim/", ".git/", ".hg/"],
+      "trace.server": "verbose",
+      "disableWorkspaceFolders": true,
+      "filetypes": ["go"]
+    }
+  },
+
+  "yaml.schemas":{
+      "url": "https://raw.githubusercontent.com/instrumenta/kubernetes-json-schema/master/v1.18.1-standalone-strict/all.json",
+      "kubernetes": ["/*.yaml", "/*.yml"]
+  }
+}
